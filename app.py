@@ -10,7 +10,7 @@ st.set_page_config(page_title="Onlone jobe.ph",page_icon=":tada:",layout="wide")
 st.title(':tada: Online job Philippines filter using Python Web scrapping:tada:')
 
 st.write(f'Please reload this page after 3min to reload update for onlinejob.ph this show 480 result for example . Please see the website to see on https://www.onlinejobs.ph/jobseekers/jobsearch')
-apple = pd.read_excel('apple.xlsx')
+#apple = pd.read_excel('apple.xlsx')
 
 def convert_df(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
