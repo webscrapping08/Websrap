@@ -11,11 +11,7 @@ st.title(':tada: Online job Philippines filter using Python Web scrapping:tada:'
 
 st.write(f'Please reload this page after 3min to reload update for onlinejob.ph this show 480 result for example . Please see the website to see on https://www.onlinejobs.ph/jobseekers/jobsearch')
 apple = pd.read_excel('apple.xlsx')
-st.write('')
-st.write('')
-st.write('')
-st.write('')
-st.write('Create By: Allan Paul A. Dela Cruz')
+
 
 def convert_df(df):
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
@@ -33,6 +29,12 @@ st.download_button(
 st.dataframe (apple)
 lenn = len(apple)
 st.write(f'Total : {lenn}')
+
+st.write('')
+st.write('')
+st.write('')
+st.write('')
+st.write('Create By: Allan Paul A. Dela Cruz')
 def extract(page):
     url = f'https://www.onlinejobs.ph/jobseekers/jobsearch/{page}'
     page=requests.get(url)
